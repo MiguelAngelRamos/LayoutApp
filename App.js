@@ -73,26 +73,30 @@ const App = () => {
 
             <View style={styles.listado}>
 
-              <View>
+              <View style={styles.listadoItem}>
                 <Image 
+                  style={styles.anuncios}
                   source={require('./assets/img/royal-guard.jpg')}
                 />
               </View>
 
-              <View>
-                <Image 
+              <View style={styles.listadoItem}>
+                <Image
+                  style={styles.anuncios} 
                   source={require('./assets/img/patagonia-hoppy.jpg')}
                 />
               </View>
 
-              <View>
-                <Image 
+              <View style={styles.listadoItem}>
+                <Image
+                  style={styles.anuncios} 
                   source={require('./assets/img/kunstman.jpg')}
                 />
               </View>
 
-              <View>
-                <Image 
+              <View style={styles.listadoItem}>
+                <Image
+                  style={styles.anuncios} 
                   source={require('./assets/img/sol.jpg')}
                 />
               </View>
@@ -114,7 +118,6 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 200,
     marginVertical: 5
-
   },
   amigos: {
     width: 250,
@@ -126,7 +129,7 @@ const styles = StyleSheet.create({
     height: 250
   },
   contenedor: {
-
+    marginHorizontal: 10
   },
   titulo: {
     fontWeight: 'bold',
@@ -135,7 +138,10 @@ const styles = StyleSheet.create({
   },
   listado: {
     flexDirection: 'row',
-    flexWrap: 'wrap', // para que las cajas bajen y tomen lo visible del dispositivo
+    flexWrap: 'wrap',
     justifyContent: 'space-between'
+  },
+  listadoItem: {
+    flexBasis: '49%'
   }
 })
